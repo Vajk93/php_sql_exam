@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+  --firstcolor: #81B622;
+  --secondcolor: #ECF87F;
+  --thirdcolor: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+/*************************************************************************/
+/*    HEADER    */
+/*************************************************************************/
+header {
+  margin: auto;
+  width: 100vw;
+  height: 90px;
+  background: var(--firstcolor);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky {
+  position: fixed;
+  background: var(--firstcolor);
+  z-index: 10000;
+}
+
+.logo {
+  flex: 1;
+  font-size: 3.5em;
+  padding-left: 30px;
+  margin-top: 3px;
+  color: var(--secondcolor);
+}
+
+.fab {
+  transition: 200ms;
+}
+
+.fab:hover {
+  color: white;
+  transition: 200ms;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  padding: 20px;
+  display: none;
+}
+
+header a {
+  text-decoration: none;
+  letter-spacing: 4px;
+  color: var(--secondcolor);
+  border-bottom: 1px solid transparent;
+  transition: 300ms;
+}
+
+header a:hover {
+  color: white;
+  transition: 300ms;
+  border-bottom: 1px solid white;
+}
+
+.bar-button {
+  display: flex;
+  font-size: 3em;
+  padding-right: 30px;
+  color: var(--secondcolor);
+}
+
+.bar-button:hover {
+  border: none;
+}
+
+/*************************************************************************/
+/*    MOBILE NAV      */
+/*************************************************************************/
+#mobileNavId {
+  background: var(--firstcolor) !important;
+  z-index: 9999;
+  height: 280px !important;
+  top: 90px;
+  width: 100%;
+  color: black;
+  border-top: 1px solid var(--secondcolor);
+  border-bottom: 1px solid var(--secondcolor);
+  display: none;
+}
+
+.stickyMobile {
+  position: fixed;
+  z-index: 10000;
+}
+
+.mobileNavClass {}
+
+.mobile-nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.mobile-nav-container div {
+  padding: 12px;
+}
+
+.mobile-nav-container a {
+  color: var(--secondcolor);
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 400;
+  transition: 200ms;
+}
+
+.mobile-nav-container a:hover {
+  color: white;
+  transition: 200ms;
+}
+
+/*************************************************************************/
+/*    MAIN  PHP SYSTEM      */
+/*************************************************************************/
+*:focus {
+  outline: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: white;
+}
+
+main .main-container {
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.main-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  height: 40px;
+  font-size: .8em;
+}
+
+.main-input {
+  background: white;
+  height: 40px;
+  border: 1px solid var(--firstcolor);
+  /*border-radius: 4px;*/
+  width: 200px;
+}
+
+.main-input:hover {
+  /*border: 2px solid #59981A;*/
+  border: 2px solid var(--firstcolor);
+}
+
+.main-button {
+  background: var(--firstcolor);
+  height: 40px;
+  border: 2px solid var(--firstcolor);
+  color: var(--secondcolor);
+  font-size: .8em;
+  width: 200px;
+  cursor: pointer;
+}
+
+main button.upload-code-button{
+  width: 70px;
+  margin-top: 10px;
+}
+
+.main-button:hover {
+  background: white;
+  border: 2px solid var(--firstcolor);
+  color: var(--firstcolor);
+  transition: 150ms;
+}
+
+.privacy-policy {
+  font-size: 0.6em;
+  border: none;
+  text-decoration: none;
+}
+
+.privacy-policy a {
+  text-decoration: none;
+  color: #59981A;
+}
+
+.privacy-policy a:hover {
+  color: var(--firstcolor);
+}
+
+.login-signup-link {
+  border-bottom: 1px solid transparent;
+  letter-spacing: normal;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.login-signup-link a {
+  text-decoration: none;
+  color: #59981A;
+}
+
+.login-signup-link a:hover {
+  color: var(--firstcolor);
+}
+
+main b {
+  font-weight: 500;
+}
+
+.welcome-message {
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.code-description{
+  font-size: .7em;
+}
+
+/*************************************************************************/
+/*    FOOTER     */
+/*************************************************************************/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: var(--firstcolor);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+}
+
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 10px 50px 10px;
+  line-height: 1.5;
+  font-weight: 300;
+  opacity: .8;
+}
+
+.footer-container h3 {
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+  color: var(--secondcolor);
+  transition: 300ms;
+}
+
+.footer-container h3:hover {
+  color: white;
+  transition: 300ms;
+}
+
+.copyright {
+  padding: 50px;
+  width: 100vw;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+  background: white;
+}
